@@ -1,0 +1,675 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------STYLES -----------------------------------------*/
+
+h1{
+	color: white;
+	font-family: 'Chewy', cursive;
+	text-align:center;
+}
+
+h2{
+	color: rgb(82, 82, 82);
+	font-family: 'Chewy', cursive;
+	text-align: center;
+	font-size: 50px;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.img_header{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.caption_1{
+	position: absolute;
+	width: 100%;
+}
+.nav{
+	width: 100%;
+}
+
+.nav-list{
+	display: flex;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.226);
+}
+.nav-list__item:hover{
+	background: rgba(0, 0, 0, 0.342);
+}
+.link_nav{
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: none;
+}
+
+.paragraph_main{
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 2;
+	font-size: 20px;
+	padding: 10px 10%;
+}
+
+
+.paragraph_secondary{
+	padding: 10px 10%;
+	text-align: justify;
+	font-size: 15px;
+	line-height: 2;
+}
+
+.icon{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.img_icon{
+	margin: auto;
+	width: 128px;
+	height: 128px;
+}
+.paragraph_icon{
+	font-size: 20px;
+	color: white;
+}
+
+.container_icons{
+	display: flex;
+	background-image: url(img/cartographer.png);
+}
+
+#qualification .paragraph_secondary{
+	background-image: url(img/parallax2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	width: 100%;
+	height: 40vw;
+	padding: 0px;
+}
+figure{
+	padding: 20px;
+}
+
+.caption_3{
+	color: #FDC405;
+/*	color:  #FF5419;*/
+	font-size: 20px;
+	font-weight: 700;
+	padding: 20px;
+}
+
+.qualification-list__termin{
+	color: #FDC405;
+	/*color:  #FF5419;*/
+	font-family: 'Chewy', cursive;
+	font-weight: 700;
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.qualification-list__determination{
+	color: #162836;
+	text-align: justify;
+	padding: 10px 10%;
+	font-size: 16px;
+	line-height: 2;
+}
+
+.itinerary-title{
+	padding: 5px 0px;
+}
+
+.itinerary-list{
+	margin: 0 10%;
+	border-left: 5px solid  #0a3b4e;	
+}
+
+.itinerary-list__item{
+	position: relative;
+	padding: 15px;
+	margin-bottom: 15px;
+	color: #FDC405;
+	font-weight: 700;
+	box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, .2);
+	transition-property: box-shadow;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: initial;
+}
+
+.itinerary-list__item:hover{
+	box-shadow: 7px 7px 30px 0 rgba(46, 61, 73, .2);
+}
+
+.itinerary-days{
+	font-family: 'Chewy', cursive;
+	padding: 5px 0px;
+	color: rgb(82, 82, 82);
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.itinerary-days::before{
+	position: absolute;
+	content: url(img/circle-icon.png);
+	transform: translate(-28px);	
+}
+#price .paragraph_main{
+	text-align: center;
+}
+#price .paragraph_secondary{
+	text-align: center;
+}
+#price p{
+	font-size: 20px;
+}
+#price .paragraph_main{
+	font-family: 'Chewy', cursive;
+	font-size: 30px;
+}
+#price .link{
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+#price .link:hover{
+	color: blue;
+	cursor: pointer;
+}
+
+.book{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	border: 1px solid white;
+}
+.book .caption_3{
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.5;
+	font-weight: 900;
+	font-family: 'Titillium Web', sans-serif;
+	color: #FFCF35
+}
+.img_book{
+	width: 100px;
+	height: 100px;
+}
+.paragraph_books{
+	padding: 20px;
+	color:white;
+}
+.buy-button{
+	padding: 20px;
+	margin: 10px;
+	background: transparent;
+	color: white;
+	border: 2px solid white;
+	font-size: 15px;
+	font-family: 'Chewy', cursive;
+}
+.buy-button:hover{
+	background: rgba(0, 0, 0, 0.37);
+	cursor: pointer;
+}
+
+
+.registration{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(img/parallax1.jpg);
+	background-size: cover;
+	overflow: hidden;
+	
+}
+.registration .caption_2{
+	color: white;
+	padding: 10px;
+	margin: 0px;
+}
+.registation_form{
+	width: 60%;
+	margin: auto;
+	padding: 40px;
+	background-color: rgba(0, 0, 0, 0.37);
+	color: white;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.registation_form input[type="text"]{
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 1px solid white;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+.registation_form input[type="email"]{
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 1px solid white;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+
+.registation_form input::placeholder{
+	color: black;
+	font-size: 15px;
+}
+.registration_button{
+	display: block;
+	width: 20%;
+	margin: auto;
+	padding: 20px;
+	background: transparent;
+	color: white;
+	border: 2px solid white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.registration input[type="button"]{
+	color: white;
+	font-size: 25px;
+	font-family: 'Chewy', cursive;
+}
+.registration label[for="subscribe"]{
+	display: block;
+	padding: 10px;
+	text-align: center;
+
+}
+.registration input[type="checkbox"]{
+	display: block;
+	margin: 10px auto;
+	width: 30px;
+	height:30px;
+}
+
+.footer{
+	background-color: rgb(53, 53, 53);
+}
+.container_contact{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.contact .caption_3{
+	color: white;
+	text-align: center;
+}
+.link_contact{
+	color: white;
+	text-decoration: none;
+}
+
+
+/*-------------media- mobile-first----------------*/
+@media (max-width: 665px){
+
+	h1{
+		color: white;
+		font-size: 50px;
+		
+	}
+
+	h2{
+		margin: 20px;
+		color: rgb(82, 82, 82);
+		font-size: 25px;
+		font-weight: 700;	
+	}
+
+	.caption_1{
+		top: 10%;
+	}
+
+	.nav-list{
+		flex-direction: column;
+	}
+
+	.nav-list__item{
+		padding: 15px;
+		font-size: 14px;
+	}
+
+
+
+	.nav-list :nth-child(1):not(a){
+		/*background-color: #D16503;*/
+		background-color: rgb(253, 122, 0);
+	}
+	.nav-list :nth-child(2){
+		background-color: rgb(255, 156, 16);
+	}
+	.nav-list :nth-child(3){
+		background-color: #1691BD;
+	}
+	.nav-list :nth-child(4){
+		background-color: #166BA2;
+	}
+	.nav-list :nth-child(5){
+		background-color: #1B3647;
+	}
+	.nav-list :nth-child(6){
+		background-color: #162836;
+	}
+	
+	.link_nav{
+		font-size: 15px;
+		font-weight: 300;	
+	}
+	#about .container_text{
+		display: flex;
+		flex-direction: column;
+	
+	}
+
+	.paragraph_secondary{
+		padding: 20px 10%;
+		text-align: justify;
+		font-size: 15px;
+		line-height: 2;
+	}
+
+	.container_icons{
+		flex-direction: column;
+		padding: 20px;
+		justify-content: space-between;
+	}
+
+	#qualification .paragraph_secondary{
+		background-attachment: initial;
+	}
+	
+	.itinerary-list{
+		margin: 0 10%;
+	}
+
+	.container_books{
+		background-image: url(img/cartographer.png);
+		display: flex;
+		flex-direction: column;
+	}
+	.registration{
+		background-attachment: initial;
+	}
+	.registration_button{
+		width: 60%;
+	}
+
+	}
+
+/*----------------------------------------------------------*/
+@media (min-width: 666px){
+	h1{
+		font-size: 60px;
+	}
+
+	h2{
+		margin: 30px;
+		font-size: 40px;
+		font-weight: 700;	
+	}
+
+	.caption_1{
+		top: 25%;
+	}
+	nav .caption_2{
+		display: none;
+	}
+	
+	.header{
+		position: relative;
+	}
+
+	.nav{
+		position: absolute;
+		top: 10%
+	}
+
+	.nav-list{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.nav-list__item {
+		padding: 10px;
+		background-color: transparent;
+	}
+	
+	.nav-list__item .link{
+		color: white;
+		font-size: 13px;
+	}
+	
+	.link:hover{
+	 color: white;
+	}
+
+	.link_nav{
+		font-size: 15px;
+		font-weight: 300;	
+	}
+	#about .container_text{
+		display: flex;
+		flex-direction: column;
+	}
+		
+	.paragraph_secondary{
+		padding: 20px 10%;
+		font-size: 15px;
+	}
+
+	.container_icons{
+		flex-direction: row;
+		padding: 20px;
+		justify-content: center;
+	}
+
+	#qualification .paragraph_secondary{
+		background-attachment: initial;
+	}
+
+	figure{
+		padding: 20px;
+	}
+
+	.caption_3{
+		font-size: 20px;
+		padding: 20px;
+	}
+
+	.qualification-list__termin{
+		padding: 20px;
+	}
+
+	.qualification-list__determination{
+		padding: 10px 10%;
+		font-size: 15px;
+	}
+	.itinerary-list{
+		margin: 0 15% 0;
+	}
+	.container_books{
+		background-image: url(img/cartographer.png);
+		flex-direction: column;
+	}
+	.registration{
+		background-attachment: initial;
+	}
+	.registration_button{
+		width: 50%;
+	}
+
+
+}
+	
+/*----------------------------------------------------------*/
+@media(min-width: 750px){
+	h1{
+		font-size: 70px;
+	}
+	.caption_1{
+		top: 30%;
+	}
+	.nav-list__item .link{
+		color: white;
+		font-size: 15px;
+	}
+}
+
+/*----------------------------------------------------------*/
+@media(min-width: 950px){
+	h1{
+		font-size: 80px;
+	}
+
+	h2{
+		margin: 20px;
+		font-size: 50px;
+		font-weight: 700;	
+	}
+	.caption_1{
+		top: 35%;
+	}
+
+	.nav-list__item {
+		padding: 10px;
+		background-color: transparent;
+	}
+
+	.nav-list__item .link{
+		font-size: 20px;
+	}
+
+	#about .paragraph_main::after{
+		content: url(img/tourist.jpg);
+	}
+
+	#about .container_text{
+		display: flex;
+		flex-direction: row;
+	}
+	#about .paragraph_main{
+		padding: 20px 10px 10px 10%;
+		font-size: 19px;
+	}
+	#about .paragraph_secondary{
+		padding: 20px 10% 20px 30px;
+		font-size: 16px;
+		align-self: flex-start;
+	}
+
+	#qualification .paragraph_secondary{
+		background-attachment: fixed;
+	}
+
+	.itinerary-list{
+		margin: 0 25% 0;
+	}
+
+	.container_books{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.registration{
+		background-attachment: fixed;
+	}
+
+	form p{
+		padding: 10px;
+	}
+
+}
+
+@media (min-width: 1200px){
+	.book{
+		width: 33%;
+		border: none;
+	}
+	.registation_form{
+		width: 45%;
+	}
+	#about .paragraph_secondary{
+		font-size: 18px;
+		align-self: flex-start;
+	}
+}
+
+/*
+
+
+
+
+*/
